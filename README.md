@@ -1,21 +1,33 @@
+## Reproduction steps
+
+* Run `./start-crossbar.sh`
+* Run `./start-web.sh`
+* start-web.sh will print the http server url. Open the url in the browser, then
+open `backend.html` and `frontend.html` in new tabs.
+* View the browser console and see connection errors.
+* View the crossbar output and see the recursion error.
+
+## Example configs
+
 Infinite recursion with this config
+
+```json
+"stats": {
+    "rated_message_size": 512,
+    "trigger_after_rated_messages": 0,
+    "trigger_after_duration": 60,
+    "trigger_on_join": false,
+    "trigger_on_leave": false
+}
+```
+
+And this too
 
 ```json
 "stats": {
     "rated_message_size": 512,
     "trigger_after_rated_messages": 5,
     "trigger_after_duration": 10,
-    "trigger_on_join": false,
-    "trigger_on_leave": false
-}
-```
-
-And this config
-```
-"stats": {
-    "rated_message_size": 512,
-    "trigger_after_rated_messages": 0,
-    "trigger_after_duration": 60,
     "trigger_on_join": false,
     "trigger_on_leave": false
 }
