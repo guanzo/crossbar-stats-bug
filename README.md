@@ -2,8 +2,8 @@
 
 * `$ git clone https://github.com/guanzo/crossbar-stats-bug`
 * `$ cd crossbar-stats-bug`
-* Run `./start-crossbar.sh` in one terminal.
-* Run `./start-web.sh` in another terminal.
+* `$ ./start-crossbar.sh` in one terminal.
+* `$ ./start-web.sh` in another terminal.
 * `start-web.sh` will print the http server url. Open the url in the browser, then
 open `backend.html` and `frontend.html` in new tabs.
 * View the browser console and see connection errors.
