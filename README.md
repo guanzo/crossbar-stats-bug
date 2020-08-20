@@ -1,6 +1,6 @@
 ## Reproduction steps
 
-* git clone https://github.com/guanzo/crossbar-stats-bug
+* `$ git clone https://github.com/guanzo/crossbar-stats-bug`
 * `$ cd crossbar-stats-bug`
 * Run `./start-crossbar.sh` in one terminal.
 * Run `./start-web.sh` in another terminal.
