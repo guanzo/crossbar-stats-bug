@@ -80,7 +80,7 @@ builtins.RecursionError: maximum recursion depth exceeded
 ```
 
 No errors with this config:
-```
+```json
 "stats": {
     "rated_message_size": 512,
     "trigger_after_rated_messages": 5,
